@@ -14,10 +14,10 @@ def app():
 def mongo(request, app):
     # client = MongoClient('localhost:27017')
 
-    mongo = PyMongo(app, uri='mongodb://localhost:27017/myTestDb')
-    datab = mongo.db.myTestDb
+    mongo = PyMongo(app, uri='mongodb://localhost:27017/myPek')
+    datab = mongo.db
     #db = me.connect('testdb', host='mongodb://localhost')
     yield datab
-    datab.myTest
-    datab.myTestb.drop()
+    #datab.myTest
+    datab.myPek.drop()
     #mongo.close()
